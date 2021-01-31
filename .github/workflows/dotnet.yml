@@ -30,8 +30,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore NuGet packages
-      run: nuget restore MyOnionApi1.sln
+      run: nuget restore MyOnionApi1/MyOnionApi1.sln
     
     - name: Build the Solution
-      run: msbuild MyOnionApi1.sln /p:Configuration=Release
+      run: msbuild MyOnionApi1/MyOnionApi1.sln /p:Configuration=Release
     
