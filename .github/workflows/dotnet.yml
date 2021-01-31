@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Integration Tests
-      run: dotnet test MyOnionApi1/MyOnionApi1.sln --no-build --verbosity normal
+      run: dotnet test ./MyOnionApi1 --no-build --verbosity normal
