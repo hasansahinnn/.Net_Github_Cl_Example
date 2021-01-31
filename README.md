@@ -9,13 +9,21 @@
 
 
 name: CI
+
 on:
+
   push:
+  
     branches: [ master ]
+    
   pull_request:
+  
     branches: [ master ]
+    
 jobs:
+
   build:
+  
     runs-on: [windows-latest]
     steps:
     - uses: actions/checkout@v2
