@@ -20,7 +20,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      working-directory: MyOnionApi1
-      run: dotnet build --no-restore
-    - name: Integration Tests
-      run: dotnet test MyOnionApi1 --no-build --verbosity normal
+      run: dotnet build --configuration Release
